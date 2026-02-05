@@ -26,7 +26,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install Cython setuptools wheel  # 先安装编译工具
           pip install -r requirements.txt
-          pip install .
 
       - name: Build with PyAppify Action
         id: build-app
