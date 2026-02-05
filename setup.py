@@ -75,6 +75,10 @@ setuptools.setup(
         "Operating System :: Microsoft :: Windows",
     ],
     install_requires=[
+        'ok-script',
+        'onnxocr-ppocrv4==0.0.5',
+        'openvino',
+        'opencv-python',
         'pywin32>=306',
         'pyappify>=1.0.2',
         'PySide6-Fluent-Widgets==1.8.3',
