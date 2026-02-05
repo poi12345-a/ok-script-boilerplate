@@ -47,9 +47,9 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: inline_ok_requirements #把ok-script加入源码, 从requirements.txt中删除以提高升级更新速度
-        run: |
-          python -m ok.update.inline_ok_requirements --tag ${{ github.ref_name }}
+      # - name: inline_ok_requirements #把ok-script加入源码, 从requirements.txt中删除以提高升级更新速度
+      #   run: |
+      #     python -m ok.update.inline_ok_requirements --tag ${{ github.ref_name }}
 
       - name: Run tests
         run: |
