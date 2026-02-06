@@ -143,11 +143,8 @@ class MyOneTimeTask(MyBaseTask):
 
     def find_ocr_eight(self):
         # 体力检测逻辑
-        # energy = self.find_ocr_four()
-        # if energy is not None and energy < 2:
-        #     self.log_info("体力不足")
-        self.handle_energy_logic()
-
+        self.operate(lambda: self.handle_energy_logic())
+        self.sleep(1)
         # 1. 尝试开启
         targets_auto = self.find_one("Auto")
         if targets_auto:
