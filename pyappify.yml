@@ -14,6 +14,7 @@ profiles:
       - "ok"        # 强制包含 ok 核心逻辑
       - "src"       # 强制包含你的业务代码
       - "assets"    # 强制包含图片资源
+      - "assets/images"
 
   - name: "Debug"
     main_script: "main_debug.py"
