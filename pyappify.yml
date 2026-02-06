@@ -10,6 +10,11 @@ profiles:
     use_pythonw: true
     show_add_defender: true
 
+    include: 
+      - "ok"        # 强制包含 ok 核心逻辑
+      - "src"       # 强制包含你的业务代码
+      - "assets"    # 强制包含图片资源
+
   - name: "Debug"
     main_script: "main_debug.py"
     requirements: "requirements.txt"
